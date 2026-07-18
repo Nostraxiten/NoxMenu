@@ -18,7 +18,8 @@
 La carpeta que contiene el Mod ya exportado a ".jar" es la de NoxMenuMod.
 ---
  
-<img width="1400" height="716" alt="Captura de pantalla 2026-07-18 193553" src="https://github.com/user-attachments/assets/3704172c-1be2-4131-80bb-c847f92cdcbe" />
+<img width="1644" height="542" alt="image" src="https://github.com/user-attachments/assets/233a4996-b5aa-4301-91d5-9eadc8780565" />
+
  
 ## Características y Arquitectura
  
