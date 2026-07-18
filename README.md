@@ -14,9 +14,7 @@
 
 ## Descripción General
 
-**NoxMenu** es un cliente modular avanzado creado con fines educativos para Minecraft 1.21.5. Construido sobre la API de Fabric, NoxMenu enseña de forma práctica los fundamentos de la programación orientada a objetos, gestión dinámica de eventos, inyección de bytecode (Mixins) y la creación de una GUI desde cero (ClickGUI).
-
-No es solo un mod, sino una base estructurada, escalable y muy limpia para quienes quieran aprender a desarrollar clientes personalizados.
+**NoxMenu** es un cliente en desarollo temprano, es posible que muchas opciones o no aparezcan, ono funcionen, o causen crasheos. No es lo esperado bajo las pruebas que realice como autor. Pero es posible bajo circustancias agenas.
 
 ---
 
