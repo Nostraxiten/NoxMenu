@@ -140,4 +140,4 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 
 > [!WARNING]
 > **Descargo de Responsabilidad Educativo**  
-> NoxMenu es un proyecto experimental de código abierto concebido con carácter **estrictamente educativo**. Todo el código fuente sirve como demostración práctica para aprender sobre Java, Mixins e inyecciones. **No está diseñado, pensado ni respaldado para usarse como una ventaja injusta, trampa o hack en servidores multijugador públicos**. Los desarrolladores no apoyan el incumplimiento de normas de servidores y no se responsabilizan bajo ninguna circunstancia por el uso indebido de esta herramienta.
+> NoxMenu es un proyecto experimental de código abierto. El autor no se responsabiliza de su mal uso en servidores publicos. 
