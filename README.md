@@ -1,4 +1,5 @@
 <div align="center">
+ 
 # NoxMenu
  
 *Framework modular de cliente Fabric para Minecraft 1.21.5*
@@ -8,8 +9,7 @@
 [![Fabric](https://img.shields.io/badge/Fabric-Loader-blue.svg?style=for-the-badge)](https://fabricmc.net/)
  
 </div>
----
- 
+
 ## Descripción General
  
 **NoxMenu** es un cliente en desarollo temprano, es posible que muchas opciones o no aparezcan, no funcionen, o causen crasheos. No es lo esperado bajo las pruebas que realice como autor.
