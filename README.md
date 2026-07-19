@@ -12,112 +12,110 @@
 
 ## Descripción General
 
-**NoxMenu** es un cliente en desarollo temprano, es posible que muchas opciones o no aparezcan, no funcionen, o causen crasheos. No es lo esperado bajo las pruebas que realice como autor. Pero es posible bajo circustancias agenas. Cualquier Error encontrado podria reportarse dentro del repositorio para soluciones futuras.
+**NoxMenu** es un cliente de Minecraft pensado para hacer el juego más cómodo, útil y personalizable. Está en desarrollo, así que algunas opciones pueden cambiar, no aparecer o funcionar de forma distinta según la situación. Si encuentras un error, puedes reportarlo en el repositorio para ayudar a mejorarlo.
 
->La carpeta que contiene el Mod ya exportado a ".jar" es la de NoxMenuMod.
+La carpeta con el mod listo para usar está en NoxMenuMod.
 ---
- 
+
 <img width="1644" height="542" alt="image" src="https://github.com/user-attachments/assets/233a4996-b5aa-4301-91d5-9eadc8780565" />
 
- 
 ## Características y Arquitectura
- 
-- **Arquitectura Modular**: Añade o elimina funciones de forma dinámica sin romper el core.
-- **EventBus**: Sistema de eventos para comunicar módulos sin acoplamiento.
-- **ClickGUI Interactiva**: Interfaz con categorías organizadas, personalizable, arrastrable, con interruptores y deslizadores.
-- **Persistencia**: Todos tus ajustes y teclas vinculadas se guardan automáticamente.
-- **Mixins Avanzados**: Modificación de mecánicas internas sin tocar el código base del juego.
+
+- **Menú fácil de usar**: Funciones organizadas en categorías para encontrar todo más rápido.
+- **Opciones personalizables**: Puedes activar, desactivar o ajustar muchas funciones a tu gusto.
+- **Ajustes guardados**: Tus cambios y teclas asignadas se guardan automáticamente.
+- **Diseño cómodo**: El menú está pensado para ser visual y práctico desde el primer uso.
 ---
- 
+
 ## Módulos y Opciones
- 
-El menú cuenta con una extensa lista de módulos organizados cuidadosamente por categoría. A continuación, se detalla **qué hace exactamente cada opción**:
- 
+
+El menú tiene muchas funciones organizadas por categorías. Aquí tienes una explicación sencilla de lo que hace cada una:
+
 ### Combat (Combate)
-*Módulos enfocados en la asistencia durante el combate y el daño.*
- 
-| Módulo | Descripción Exacta |
+*Módulos para ayudarte en peleas y en situaciones de combate.*
+
+| Módulo | Descripción sencilla |
 |---|---|
-| **AntiKnockback** | Anula o reduce el retroceso al recibir un golpe, evitando que te empujen o te tiren al vacío. |
-| **AutoBlock** | Bloquea ataques automáticamente usando tu espada o escudo justo en el momento exacto de recibir daño. |
-| **AutoTotem** | Equipa instantáneamente un Tótem de Inmortalidad en tu mano secundaria de forma automática cuando tu salud es crítica. |
-| **BowPredictionAim** | Calcula la caída de la flecha y el movimiento del enemigo, apuntando automáticamente con precisión matemática. |
-| **Criticals** | Fuerza un impacto crítico en todos y cada uno de tus ataques modificando tu estado de salto en los paquetes de red. |
-| **HitboxExpand** | Expande virtualmente las cajas de colisión (hitboxes) de los enemigos para facilitar enormemente acertar los golpes. |
-| **KillAura** | Ataca y golpea automáticamente y a gran velocidad a cualquier entidad o jugador que entre en tu radio de alcance. |
-| **Reach** | Aumenta la distancia máxima desde la que puedes interactuar y golpear entidades, otorgándote más alcance. |
-| **SilentAim** | Corrige automáticamente tus ataques hacia el enemigo más cercano o vulnerable sin que tu cámara se mueva visualmente. |
-| **TriggerBot** | Golpea automáticamente justo en el milisegundo en el que el punto de mira de tu pantalla se cruza con una entidad. |
- 
+| **AntiKnockback** | Reduce el empuje cuando te golpean. |
+| **AutoBlock** | Bloquea automáticamente cuando lo necesitas. |
+| **AutoTotem** | Usa un tótem de forma automática si te queda poca vida. |
+| **BowPredictionAim** | Ayuda a apuntar mejor con el arco. |
+| **Criticals** | Hace que tus golpes se sientan más fuertes. |
+| **HitboxExpand** | Te ayuda a acertar golpes más fácilmente. |
+| **KillAura** | Ataca automáticamente al objetivo cercano. |
+| **Reach** | Aumenta el alcance de tus ataques. |
+| **SilentAim** | Ayuda a golpear al objetivo sin que la cámara se mueva mucho. |
+| **TriggerBot** | Golpea al instante cuando el objetivo está en tu mira. |
+
 ### Movement (Movimiento)
-*Módulos para alterar la física y desplazamiento del jugador.*
- 
-| Módulo | Descripción Exacta |
+*Módulos para moverte mejor y de formas más rápidas.*
+
+| Módulo | Descripción sencilla |
 |---|---|
-| **AntiVoid** | Te salva automáticamente de caer al vacío teletransportándote hacia arriba o rebotando para darte la oportunidad de salvarte. |
-| **AutoSprint** | Mantiene activado el modo de correr automáticamente siempre que te mueves hacia adelante. |
-| **Fly** | Te permite volar libremente por el mundo en modo supervivencia como si estuvieras jugando en modo creativo. |
-| **FreecamNoclip** | Variante de vuelo libre que además te permite atravesar directamente cualquier bloque físico del mundo. |
-| **Jesus** | Modifica tu física para permitirte caminar o correr por la superficie del agua o lava sin hundirte jamás. |
-| **NoFall** | Elimina por completo el daño por caída recibido al saltar o caer desde grandes alturas. |
-| **NoSlowdown** | Evita cualquier penalización de movimiento al pasar por telarañas, comer, usar arco o utilizar escudo. |
-| **Speed** | Modifica tu fricción y aceleración en el terreno para moverte a velocidades superiores a las del juego base. |
-| **Spider** | Te permite trepar cualquier pared vertical de bloques sólidos como si estuvieras subiendo una escalera de mano. |
-| **Step** | Aumenta la altura de paso, permitiéndote subir escalones o bloques completos de forma instantánea sin tener que saltar. |
- 
+| **AntiVoid** | Te ayuda a evitar caer al vacío. |
+| **AutoSprint** | Mantiene el sprint activo mientras te mueves. |
+| **Fly** | Te permite volar por el mundo. |
+| **FreecamNoclip** | Te deja moverte libremente y atravesar bloques. |
+| **Jesus** | Te ayuda a caminar sobre agua o lava. |
+| **NoFall** | Evita el daño por caída. |
+| **NoSlowdown** | Reduce la lentitud al correr, comer o usar arco. |
+| **Speed** | Aumenta tu velocidad de movimiento. |
+| **Spider** | Te deja trepar paredes. |
+| **Step** | Te ayuda a subir escalones más fácilmente. |
+
 ### Player (Jugador)
-*Mejoras en la interacción y utilidades del propio jugador.*
- 
-| Módulo | Descripción Exacta |
+*Módulos para facilitar la experiencia de juego y la gestión del personaje.*
+
+| Módulo | Descripción sencilla |
 |---|---|
-| **AntiAFK** | Realiza micromovimientos y acciones automáticas programadas para evitar que los servidores te expulsen por inactividad. |
-| **AutoEat** | Selecciona la mejor comida de tu inventario y come de manera automática cuando tu nivel de hambre o salud disminuye. |
-| **AutoRespawn** | Evita la pantalla de "Has muerto", enviando el paquete de reaparición forzando volver a la vida al instante. |
-| **ChestStealer** | Transfiere rápidamente y de forma automática todo el contenido de un cofre a tu inventario nada más abrirlo. |
-| **HUDOverlay** | Muestra en pantalla información esencial en tiempo real como coordenadas, FPS, lag (TPS), armadura y módulos activos. |
-| **NotificationSystem** | Despliega alertas visuales emergentes, elegantes y no intrusivas en pantalla sobre acciones y eventos del cliente. |
-| **PanicKey** | Funciona como un botón de emergencia que desactiva de un solo golpe todos los módulos activos para parecer 100% legítimo. |
- 
+| **AntiAFK** | Evita que te saquen por inactividad. |
+| **AutoEat** | Come automáticamente cuando necesitas comida. |
+| **AutoRespawn** | Te hace reaparecer más rápido al morir. |
+| **ChestStealer** | Saca todo de un cofre automáticamente. |
+| **HUDOverlay** | Muestra información útil en pantalla como FPS, coordenadas y más. |
+| **NotificationSystem** | Muestra avisos visuales sencillos del cliente. |
+| **PanicKey** | Desactiva todo de golpe si lo necesitas. |
+
 ### Render (Visuales)
-*Alteraciones gráficas y mejoras visuales de cómo ves el mundo.*
- 
-| Módulo | Descripción Exacta |
+*Módulos para cambiar cómo ves el mundo y los objetos.*
+
+| Módulo | Descripción sencilla |
 |---|---|
-| **BlockESP** | Resalta bloques de minerales (Diamante, Ancestral, Oro, Hierro, Carbon, Esmeralda, Cobre) a traves de las paredes con lineas de colores especificos y radio configurable. |
-| **ChestClusters** | Agrupa cofres, cofres trampa y barriles cercanos usando Union-Find. Dibuja una linea hacia el centroide del grupo, una caja envolvente con margen de un bloque y una etiqueta con el conteo. |
-| **Chams** | Modifica el renderizado de las entidades para mostrarlas con un color brillante y sólido totalmente visible tras las paredes. |
-| **ESP** | Dibuja cajas 2D/3D (Extra Sensory Perception) precisas alrededor de jugadores y criaturas para revelar sus posiciones fácilmente. |
-| **Freecam** | Desprende la cámara de tu cuerpo para explorar los alrededores libremente como espectador, mientras tu personaje físico se queda seguro. |
-| **FullBright** | Altera la iluminación interna del juego al infinito permitiendo ver absolutamente todo iluminado, incluso en cuevas oscuras. |
-| **NoFog** | Elimina completamente la niebla de la lejanía, del agua profunda y de la lava, mejorando enormemente la visibilidad. |
-| **NoHurtCam** | Desactiva el molesto efecto de temblor, inclinación y giro brusco de la cámara que se produce cada vez que recibes daño. |
-| **NoParticles** | Elimina por completo todas las partículas del juego, ayudando inmensamente a subir los FPS y mejorar el rendimiento. |
-| **StorageESP** | Encuentra y dibuja contornos sobre cajas fuertes, cofres, barriles, hornos y shulkers viéndolos a través del suelo o paredes. |
-| **Tracers** | Dibuja finas y precisas líneas de colores desde la cruceta central de tu pantalla directamente hacia los jugadores y mobs cercanos. |
-| **XRay** | Hace invisibles todos los bloques comunes sin valor (piedra, tierra, andesita) revelando instantáneamente solo los minerales valiosos. |
-| **Zoom** | Acerca la vista de la cámara con una transición fluida y suave, similar al clásico zoom del mod OptiFine pero configurable. |
- 
+| **BlockESP** | Marca bloques importantes a través de las paredes. |
+| **ChestClusters** | Agrupa cofres cercanos y los resalta. |
+| **Chams** | Hace que algunas entidades se vean más visibles. |
+| **ESP** | Muestra la posición de jugadores o criaturas. |
+| **Freecam** | Te permite ver el mundo desde otra cámara. |
+| **FullBright** | Ilumina el entorno para ver mejor. |
+| **NoFog** | Quita la niebla para ver más lejos. |
+| **NoHurtCam** | Elimina el efecto de cámara al recibir daño. |
+| **NoParticles** | Quita las partículas para mejorar el rendimiento. |
+| **StorageESP** | Resalta cofres, barriles y otros contenedores. |
+| **Tracers** | Dibuja líneas hacia jugadores o mobs cercanos. |
+| **XRay** | Te deja ver minerales a través de bloques comunes. |
+| **Zoom** | Acerca la vista cuando lo necesites. |
+
 ### World (Mundo)
-*Automatización y dominio del entorno del juego.*
- 
-| Módulo | Descripción Exacta |
+*Módulos para automatizar tareas y trabajar más rápido en el mundo.*
+
+| Módulo | Descripción sencilla |
 |---|---|
-| **AutoFish** | Detecta el sonido y movimiento del agua cuando un pez muerde el anzuelo, recoge la caña y vuelve a lanzarla sola. |
-| **AutoMine** | Mantiene presionado y activo el botón de romper bloques de forma constante para facilitar túneles sin cansarte de presionar el ratón. |
-| **AutoTool** | Analiza en microsegundos el bloque que estás mirando y cambia tu mano de forma automática a la mejor herramienta de tu inventario. |
-| **Nuker** | Rompe y arrasa al instante con todos los bloques de un área esférica configurada alrededor de ti a una velocidad vertiginosa. |
-| **Scaffold** | Coloca mágicamente bloques debajo de tus pies justo a medida que caminas por cornisas o sobre el vacío, tendiendo puentes mientras te mueves. |
-| **Timer** | Altera globalmente el Tickrate de tu cliente (acelera o ralentiza) haciendo que corras o realices acciones mucho más rápido que otros jugadores. |
+| **AutoFish** | Pesca de forma automática. |
+| **AutoMine** | Rompe bloques sin tener que mantener el clic todo el tiempo. |
+| **AutoTool** | Cambia a la mejor herramienta automáticamente. |
+| **Nuker** | Rompe varios bloques a la vez. |
+| **Scaffold** | Coloca bloques debajo de tus pies mientras te mueves. |
+| **Timer** | Acelera o ralentiza ciertas acciones del juego. |
 
 ### Theme (Temas)
-*Personalizacion visual de la interfaz del cliente.*
+*Opciones para cambiar el aspecto del menú.*
 
-| Modulo | Descripcion Exacta |
+| Módulo | Descripción sencilla |
 |---|---|
-| **CustomTheme** | Permite cambiar los colores de la interfaz, textos, fondos y degradados de forma interactiva desde el propio juego. |
+| **CustomTheme** | Permite cambiar los colores del menú y la interfaz. |
 
 ---
- 
+
 ## Controles de la Interfaz
  
 - **Abrir Menú**: Presiona `Tab + Control` (configurable).
@@ -141,6 +139,12 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 > **Descargo de Responsabilidad Educativo**  
 > NoxMenu es un proyecto experimental de código abierto. El autor no se responsabiliza de su mal uso en servidores publicos.
 
+## Novedades de la Version 1.8.1
+
+- **Temas Personalizados**: Nueva categoria Theme y modulo CustomTheme para cambiar colores de fondo, degradados y textos del menu directamente en el juego. Se guardan para tu proxima sesion.
+- **Selector de Color Avanzado**: Nuevo sistema interactivo con barras de tono, saturacion y brillo para seleccionar de forma sencilla cualquier color sin fallos.
+- **Ventanas de Ayuda Centradas**: Los textos de explicacion ahora aparecen siempre fijados en la parte inferior central de la pantalla, evitando tapar el menu sin importar donde hagas clic.
+- **Limpieza**: Se elimino NightVision para asegurar que la iluminacion general (FullBright) no tenga conflictos.
 
 ## Novedades de la Version 1.8.2
 
