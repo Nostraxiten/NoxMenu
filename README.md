@@ -13,8 +13,6 @@
 ## Descripción General
 
 **NoxMenu** es un cliente en desarollo temprano, es posible que muchas opciones o no aparezcan, no funcionen, o causen crasheos. No es lo esperado bajo las pruebas que realice como autor. Pero es posible bajo circustancias agenas. Cualquier Error encontrado podria reportarse dentro del repositorio para soluciones futuras.
-> Hay un pequeño error para el recuadro de la opcion "?". Ignorar si leiste el readme.
-
 La carpeta que contiene el Mod ya exportado a ".jar" es la de NoxMenuMod.
 ---
  
