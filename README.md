@@ -142,12 +142,6 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 > **Descargo de Responsabilidad Educativo**  
 > NoxMenu es un proyecto experimental de código abierto. El autor no se responsabiliza de su mal uso en servidores publicos.
 
-## Novedades de la Version 1.8.1
-
-- **Temas Personalizados**: Nueva categoria Theme y modulo CustomTheme para cambiar colores de fondo, degradados y textos del menu directamente en el juego. Se guardan para tu proxima sesion.
-- **Selector de Color Avanzado**: Nuevo sistema interactivo con barras de tono, saturacion y brillo para seleccionar de forma sencilla cualquier color sin fallos.
-- **Ventanas de Ayuda Centradas**: Los textos de explicacion ahora aparecen siempre fijados en la parte inferior central de la pantalla, evitando tapar el menu sin importar donde hagas clic.
-- **Limpieza**: Se elimino NightVision para asegurar que la iluminacion general (FullBright) no tenga conflictos.
 
 ## Novedades de la Version 1.8.2
 
