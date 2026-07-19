@@ -7,7 +7,7 @@
 [![Java 21](https://img.shields.io/badge/Java-21-orange.svg?style=for-the-badge)](https://openjdk.org/)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.5-green.svg?style=for-the-badge)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Fabric-Loader-blue.svg?style=for-the-badge)](https://fabricmc.net/)
-[![Version](https://img.shields.io/badge/Version-1.8.1-purple.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/Version-1.8.2-purple.svg?style=for-the-badge)]()
 </div>
 
 ## Descripción General
@@ -148,3 +148,7 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 - **Selector de Color Avanzado**: Nuevo sistema interactivo con barras de tono, saturacion y brillo para seleccionar de forma sencilla cualquier color sin fallos.
 - **Ventanas de Ayuda Centradas**: Los textos de explicacion ahora aparecen siempre fijados en la parte inferior central de la pantalla, evitando tapar el menu sin importar donde hagas clic.
 - **Limpieza**: Se elimino NightVision para asegurar que la iluminacion general (FullBright) no tenga conflictos.
+
+## Novedades de la Version 1.8.2
+
+- Solo arregla cosas.
