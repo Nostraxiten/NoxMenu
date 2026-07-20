@@ -14,6 +14,9 @@
 
 **NoxMenu** es un cliente en desarrollo temprano. Cualquier error encontrado podría reportarse dentro del repositorio para soluciones futuras.
 
+> **Nota importante:** este repositorio no incluye el código fuente completo del proyecto.
+> Solo contiene la carpeta `NoxMenuMod` con el mod exportado y este `README.md`.
+
 La carpeta que contiene el Mod ya exportado a ".jar" es la de NoxMenuMod.
 ---
  
