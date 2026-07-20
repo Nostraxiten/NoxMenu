@@ -7,7 +7,7 @@
 [![Java 21](https://img.shields.io/badge/Java-21-orange.svg?style=for-the-badge)](https://openjdk.org/)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.5-green.svg?style=for-the-badge)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Fabric-Loader-blue.svg?style=for-the-badge)](https://fabricmc.net/)
-[![Version](https://img.shields.io/badge/Version-2.0.0-purple.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/Version-2.0.1-purple.svg?style=for-the-badge)]()
 </div>
 
 ## Descripción General
@@ -20,7 +20,7 @@
 La carpeta que contiene el Mod ya exportado a ".jar" es la de NoxMenuMod.
 ---
  
-<img width="1644" height="542" alt="image" src="https://github.com/user-attachments/assets/233a4996-b5aa-4301-91d5-9eadc8780565" />
+<img width="1919" height="542" alt="Captura de pantalla 2026-07-20 191650" src="https://github.com/user-attachments/assets/5d3f1709-9b80-48af-9bb3-98a21852ef1e" />
 
  
 ## Características y Arquitectura
