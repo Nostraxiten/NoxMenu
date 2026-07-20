@@ -148,11 +148,8 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 4. Mueve ese archivo `.jar` a tu carpeta local de mods (`%appdata%/.minecraft/mods` en Windows) e inicia el juego asegurándote de usar el perfil cargador de Fabric.
 ---
 
-Si quieres hacer modificaciones recomiendo el uso del comando: git clone https://github.com/Nostraxiten/NoxMenu.git
-
 > [!WARNING]
-> **Descargo de Responsabilidad Educativo**  
-> NoxMenu es un proyecto experimental de código abierto. El autor no se responsabiliza de su mal uso en servidores publicos.
+> El autor no se responsabiliza de su mal uso en servidores publicos.
 
 ## Novedades de la Version 2.0.1
 
