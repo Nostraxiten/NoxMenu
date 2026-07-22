@@ -1,23 +1,24 @@
 <div align="center">
  
-# NoxMenu
+# NoxMenu``
  
 *Framework modular de cliente Fabric para Minecraft 1.21.5*
  
 [![Java 21](https://img.shields.io/badge/Java-21-orange.svg?style=for-the-badge)](https://openjdk.org/)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.5-green.svg?style=for-the-badge)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Fabric-Loader-blue.svg?style=for-the-badge)](https://fabricmc.net/)
-[![Version](https://img.shields.io/badge/Version-2.0.1-purple.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/Version-5.0.0-purple.svg?style=for-the-badge)]()
 </div>
 
 ## Descripción General
 
 **NoxMenu** es un cliente en desarrollo temprano. Cualquier error encontrado podría reportarse dentro del repositorio para soluciones futuras.
 
-> **Nota importante:** este repositorio no incluye el código fuente completo del proyecto.
-> Solo contiene la carpeta `NoxMenuMod` con el mod exportado y este `README.md`.
-
-La carpeta que contiene el Mod ya exportado a ".jar" es la de NoxMenuMod.
+> **Nota importante sobre el Repositorio (GitHub):** 
+> Al subirse a GitHub, el código fuente privado (`NoxMenuCode`) no se incluirá en el repositorio remoto. 
+> El repositorio solo contendrá las siguientes carpetas:
+> - **`NoxMenuMod`**: Contiene la versión principal, estable y funcional (v5.0.0) exportada a `.jar` lista para usar.
+> - **`OLDvers`**: Contiene versiones antiguas, experimentales o incompletas. Algunas pueden funcionar pero muchas otras pueden ser inestables, tener funciones rotas o estar desactualizadas. Úsalas con precaución.
 ---
  
 <img width="1919" height="542" alt="Captura de pantalla 2026-07-20 191650" src="https://github.com/user-attachments/assets/5d3f1709-9b80-48af-9bb3-98a21852ef1e" />
@@ -43,13 +44,13 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 |---|---|
 | **AntiKnockback** | Anula o reduce el retroceso al recibir un golpe, evitando que te empujen o te tiren al vacío. |
 | **AutoBlock** | Bloquea ataques automáticamente usando tu espada o escudo justo en el momento exacto de recibir daño. |
+| **AutoDodge** | Esquiva automáticamente flechas y proyectiles detectando su trayectoria. |
 | **AutoTotem** | Equipa instantáneamente un Tótem de Inmortalidad en tu mano secundaria de forma automática cuando tu salud es crítica. |
-| **BowPredictionAim** | Calcula la caída de la flecha y el movimiento del enemigo, apuntando automáticamente con precisión matemática. |
-| **Criticals** | Fuerza un impacto crítico en todos y cada uno de tus ataques modificando tu estado de salto en los paquetes de red. |
+| **CrystalAura** | Coloca y explota cristales del end automáticamente para hacer daño de área a tus enemigos. |
 | **HitboxExpand** | Expande virtualmente las cajas de colisión (hitboxes) de los enemigos para facilitar enormemente acertar los golpes. |
 | **KillAura** | Ataca y golpea automáticamente y a gran velocidad a cualquier entidad o jugador que entre en tu radio de alcance. |
-| **Reach** | Aumenta la distancia máxima desde la que puedes interactuar y golpear entidades, otorgándote más alcance. |
-| **SilentAim** | Corrige automáticamente tus ataques hacia el enemigo más cercano o vulnerable sin que tu cámara se mueva visualmente. |
+| **KillAuraRealistic** | Variante de KillAura que simula movimientos de cámara humanos y retrasa los ataques para parecer legítimo. |
+| **Surround** | Coloca bloques automáticamente a tu alrededor para proteger tus pies de explosiones. |
 | **TriggerBot** | Golpea automáticamente justo en el milisegundo en el que el punto de mira de tu pantalla se cruza con una entidad. |
  
 ### Movement (Movimiento)
@@ -60,10 +61,9 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **AntiVoid** | Te salva automáticamente de caer al vacío teletransportándote hacia arriba o rebotando para darte la oportunidad de salvarte. |
 | **AutoSprint** | Mantiene activado el modo de correr automáticamente siempre que te mueves hacia adelante. |
 | **Fly** | Te permite volar libremente por el mundo en modo supervivencia como si estuvieras jugando en modo creativo. |
-| **FreecamNoclip** | Variante de vuelo libre que además te permite atravesar directamente cualquier bloque físico del mundo. |
 | **Jesus** | Modifica tu física para permitirte caminar o correr por la superficie del agua o lava sin hundirte jamás. |
+| **NoclipTP** | Te permite teletransportarte a través de paredes y bloques sólidos de forma segura usando un fallo de desincronización. |
 | **NoFall** | Elimina por completo el daño por caída recibido al saltar o caer desde grandes alturas. |
-| **NoSlowdown** | Evita cualquier penalización de movimiento al pasar por telarañas, comer, usar arco o utilizar escudo. |
 | **Speed** | Modifica tu fricción y aceleración en el terreno para moverte a velocidades superiores a las del juego base. |
 | **Spider** | Te permite trepar cualquier pared vertical de bloques sólidos como si estuvieras subiendo una escalera de mano. |
 | **Step** | Aumenta la altura de paso, permitiéndote subir escalones o bloques completos de forma instantánea sin tener que saltar. |
@@ -74,9 +74,11 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | Módulo | Descripción Exacta |
 |---|---|
 | **AntiAFK** | Realiza micromovimientos y acciones automáticas programadas para evitar que los servidores te expulsen por inactividad. |
+| **AutoArmor** | Equipa automáticamente las mejores piezas de armadura que tengas en tu inventario. |
 | **AutoEat** | Selecciona la mejor comida de tu inventario y come de manera automática cuando tu nivel de hambre o salud disminuye. |
 | **AutoRespawn** | Evita la pantalla de "Has muerto", enviando el paquete de reaparición forzando volver a la vida al instante. |
 | **ChestStealer** | Transfiere rápidamente y de forma automática todo el contenido de un cofre a tu inventario nada más abrirlo. |
+| **DeathCoords** | Guarda y muestra las coordenadas exactas de tu última muerte en el chat. |
 | **HUDOverlay** | Muestra en pantalla información esencial en tiempo real como coordenadas, FPS, lag (TPS), armadura y módulos activos. |
 | **NotificationSystem** | Despliega alertas visuales emergentes, elegantes y no intrusivas en pantalla sobre acciones y eventos del cliente. |
 | **PanicKey** | Funciona como un botón de emergencia que desactiva de un solo golpe todos los módulos activos para parecer 100% legítimo. |
@@ -88,13 +90,11 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 |---|---|
 | **BlockESP** | Resalta bloques de minerales (Diamante, Ancestral, Oro, Hierro, Carbon, Esmeralda, Cobre) a traves de las paredes con lineas de colores especificos y radio configurable. |
 | **ChestClusters** | Agrupa cofres, cofres trampa y barriles cercanos usando Union-Find. Dibuja una linea hacia el centroide del grupo, una caja envolvente con margen de un bloque y una etiqueta con el conteo. |
-| **Chams** | Modifica el renderizado de las entidades para mostrarlas con un color brillante y sólido totalmente visible tras las paredes. |
 | **ESP** | Dibuja cajas 2D/3D (Extra Sensory Perception) precisas alrededor de jugadores y criaturas para revelar sus posiciones fácilmente. |
 | **Freecam** | Desprende la cámara de tu cuerpo para explorar los alrededores libremente como espectador, mientras tu personaje físico se queda seguro. |
-| **FullBright** | Altera la iluminación interna del juego al infinito permitiendo ver absolutamente todo iluminado, incluso en cuevas oscuras. |
 | **NoFog** | Elimina completamente la niebla de la lejanía, del agua profunda y de la lava, mejorando enormemente la visibilidad. |
-| **NoHurtCam** | Desactiva el molesto efecto de temblor, inclinación y giro brusco de la cámara que se produce cada vez que recibes daño. |
 | **NoParticles** | Elimina por completo todas las partículas del juego, ayudando inmensamente a subir los FPS y mejorar el rendimiento. |
+| **ProjectileTrajectory** | Dibuja una línea que predice exactamente dónde caerán tus flechas o proyectiles antes de lanzarlos. |
 | **StorageESP** | Encuentra y dibuja contornos sobre cajas fuertes, cofres, barriles, hornos y shulkers viéndolos a través del suelo o paredes. |
 | **Tracers** | Dibuja finas y precisas líneas de colores desde la cruceta central de tu pantalla directamente hacia los jugadores y mobs cercanos. |
 | **XRay** | Hace invisibles todos los bloques comunes sin valor revelando instantáneamente solo los minerales valiosos. |
@@ -107,6 +107,7 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 |---|---|
 | **ChunkOptimizer** | Reduce el lag y stuttering al generar y cargar nuevos chunks limitando la recarga en el motor gráfico. |
 | **FPSBoost** | Opciones para desactivar clima, fuego alto, y reducir distancias de dibujado para maximizar fotogramas. |
+| **LeavesOptimizer** | Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia). |
  
 ### World (Mundo)
 *Automatización y dominio del entorno del juego.*
@@ -116,9 +117,8 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **AutoFish** | Detecta el sonido y movimiento del agua cuando un pez muerde el anzuelo, recoge la caña y vuelve a lanzarla sola. |
 | **AutoMine** | Mantiene presionado y activo el botón de romper bloques de forma constante para facilitar túneles sin cansarte de presionar el ratón. |
 | **AutoTool** | Analiza en microsegundos el bloque que estás mirando y cambia tu mano de forma automática a la mejor herramienta de tu inventario. |
-| **Nuker** | Rompe y arrasa al instante con todos los bloques de un área esférica configurada alrededor de ti a una velocidad vertiginosa. |
 | **Scaffold** | Coloca mágicamente bloques debajo de tus pies justo a medida que caminas por cornisas o sobre el vacío, tendiendo puentes mientras te mueves. |
-| **Timer** | Altera globalmente el Tickrate de tu cliente (acelera o ralentiza) haciendo que corras o realices acciones mucho más rápido que otros jugadores. |
+| **VillagerClusters** | Implementa un sistema de clustering para agrupar aldeanos cercanos mostrando métricas precisas. |
 
 ### Theme (Temas)
 *Personalizacion visual de la interfaz del cliente.*
@@ -151,8 +151,12 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 > [!WARNING]
 > El autor no se responsabiliza de su mal uso en servidores publicos.
 
-## Novedades de la Version 2.0.1
+## Novedades de la Version 5.0.0
 
+- **Limpieza de Interfaz:** Se han ocultado temporalmente módulos en mantenimiento (`NoRotate`, `PlayerESP`, `ItemPhysic`, `InventoryPeek`).
+- **Reorganización:** Los módulos `NoFog` y `NoParticles` ahora pertenecen a la categoría correcta de `Optimize`.
+- **Nuevo Módulo - VillagerClusters (World):** Implementa un sistema matemático de clustering (reutilizando `ClusterUtils`) para agrupar aldeanos cercanos, mostrando métricas precisas con líneas y cajas envolventes en 3D.
+- **Nuevo Módulo - LeavesOptimizer (Optimize):** Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia) con color verde uniforme configurable, similar al modo "Fast" de Optifine.
 - **Fix Critico X-Ray**: El XRay fue re-escrito para no recalcular la malla de colisión de bloques de Minecraft cada tick del juego, lo que resultaba en un grave lag. Ahora, funciona como el X-Ray clásico de versiones antiguas (1.8.1).
 - **Fix Critico NoSlowdown**: Ajustado a la versión de Fabric 1.21.5. Ahora al utilizar escudos, arcos o telarañas o arena de almas no se recibe penalización de velocidad alguna (y están divididos en sus propios toggles).
 - **Nuevos Módulos de Optimización (Categoría Optimize)**: Se introducen los módulos `ChunkOptimizer` (estabiliza los fotogramas evitando microtirones al renderizar nuevas áreas de mundo) y `FPSBoost` (elimina renders costosos como la lluvia, animaciones extra o fuego grande).

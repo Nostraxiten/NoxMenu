@@ -1,6 +1,2 @@
-﻿NoxMenuCode/.gradle/
-NoxMenuCode/build/
-NoxMenuCode/jdk-21.0.3+9/
-NoxMenuCode/run/
-NoxMenuCode/.git/
-NoxMenuCode_git_backup/
+NoxMenuCode/
+INSTRUCCIONES_DE_COMPILACION.md

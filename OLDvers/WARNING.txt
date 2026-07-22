@@ -1,0 +1,30 @@
+========================================================================
+ ESPAÑOL
+========================================================================
+¡ATENCIÓN!
+
+Las versiones contenidas en esta carpeta (OLDvers) son versiones 
+antiguas, obsoletas, experimentales o incompletas de NoxMenu. 
+Algunas de estas versiones pueden funcionar parcialmente, pero muchas 
+otras son inestables, pueden causar cierres inesperados (crashes), 
+corrupción visual, o simplemente contener errores graves que ya han 
+sido solucionados en versiones posteriores.
+
+Utilízalas bajo tu propia responsabilidad y únicamente con fines de 
+archivo o testeo. La versión recomendada y estable actual siempre se 
+encuentra en la carpeta principal o en la última release.
+
+========================================================================
+ ENGLISH
+========================================================================
+WARNING!
+
+The versions contained in this folder (OLDvers) are old, obsolete, 
+experimental, or incomplete versions of NoxMenu. 
+Some of these versions might work partially, but many others are 
+unstable, can cause unexpected crashes, visual corruption, or simply 
+contain critical bugs that have already been fixed in newer versions.
+
+Use them at your own risk and strictly for archival or testing purposes. 
+The current stable and recommended version is always located in the 
+main folder or the latest release.
