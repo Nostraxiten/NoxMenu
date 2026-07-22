@@ -157,6 +157,6 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 - **Nuevo Módulo - VillagerClusters (World):** Implementa un sistema matemático de clustering (reutilizando `ClusterUtils`) para agrupar aldeanos cercanos, mostrando métricas precisas con líneas y cajas envolventes en 3D.
 - **Nuevo Módulo - LeavesOptimizer (Optimize):** Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia) con color verde uniforme configurable, similar al modo "Fast" de Optifine.
 - **Fix Critico X-Ray**: El XRay fue re-escrito para no recalcular la malla de colisión de bloques de Minecraft cada tick del juego, lo que resultaba en un grave lag. Ahora, funciona como el X-Ray clásico de versiones antiguas (1.8.1).
-- **Fix Critico NoSlowdown**: Ajustado a la versión de Fabric 1.21.5. Ahora al utilizar escudos, arcos o telarañas o arena de almas no se recibe penalización de velocidad alguna (y están divididos en sus propios toggles).
+cos o telarañas o arena de almas no se recibe penalización de velocidad alguna (y están divididos en sus propios toggles).
 - **Nuevos Módulos de Optimización (Categoría Optimize)**: Se introducen los módulos `ChunkOptimizer` (estabiliza los fotogramas evitando microtirones al renderizar nuevas áreas de mundo) y `FPSBoost` (elimina renders costosos como la lluvia, animaciones extra o fuego grande).
 - **Refactor General**: Optimización general del EventBus interno.
