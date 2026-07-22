@@ -20,10 +20,9 @@
 > - **`NoxMenuMod`**: Contiene la versión principal, estable y funcional (v5.0.0) exportada a `.jar` lista para usar.
 > - **`OLDvers`**: Contiene versiones antiguas, experimentales o incompletas. Algunas pueden funcionar pero muchas otras pueden ser inestables, tener funciones rotas o estar desactualizadas. Úsalas con precaución.
 ---
- 
-<img width="1919" height="542" alt="Captura de pantalla 2026-07-20 191650" src="https://github.com/user-attachments/assets/5d3f1709-9b80-48af-9bb3-98a21852ef1e" />
 
- 
+<img width="1919" height="444" alt="Captura de pantalla 2026-07-22 114545" src="https://github.com/user-attachments/assets/aa63bb2c-6bb8-49f8-858e-7415d2a64212" />
+
 ## Características y Arquitectura
  
 - **Arquitectura Modular**: Añade o elimina funciones de forma dinámica sin romper el core.
