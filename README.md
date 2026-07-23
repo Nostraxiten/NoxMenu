@@ -163,11 +163,17 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 
 ## Al final de esta documentación se adjuntaran capturas de las mejores configuraciones de las herramientas que suelen ser mas usadas.
 
-1. **KillAuraRealistic**
-<img width="248" height="366" alt="Captura de pantalla 2026-07-23 113906" src="https://github.com/user-attachments/assets/c63e007b-b4d3-47ad-b194-95c2f8243409" />
+1. **KillAura**
+<img width="251" height="514" alt="Captura de pantalla 2026-07-23 232551" src="https://github.com/user-attachments/assets/c73a0d04-ac85-4c39-b3e5-ce6808671186" />
+<img width="255" height="337" alt="Captura de pantalla 2026-07-23 232545" src="https://github.com/user-attachments/assets/dce18f33-a620-4b17-8b3b-6a0dd3689794" />
+
+
 
 2. **Optimizacion y mejoras de vision** 
 <img width="526" height="462" alt="Captura de pantalla 2026-07-23 114537" src="https://github.com/user-attachments/assets/081f825c-e296-4b00-94e9-63976da6fa2e" />
+
+
+
 
 3. **CristalAura. Es la mejor versión que pude lograr de esta opcion**
 <img width="250" height="606" alt="Captura de pantalla 2026-07-23 142612" src="https://github.com/user-attachments/assets/a8144a49-56a8-451c-abbb-fe9d3117dbc8" />
