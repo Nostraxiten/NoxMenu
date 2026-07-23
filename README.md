@@ -1,6 +1,6 @@
 <div align="center">
  
-# NoxMenu``
+# NoxMenu
  
 *Framework modular de cliente Fabric para Minecraft 1.21.5*
  
