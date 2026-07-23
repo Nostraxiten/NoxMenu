@@ -118,6 +118,8 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **AutoTool** | Analiza en microsegundos el bloque que estás mirando y cambia tu mano de forma automática a la mejor herramienta de tu inventario. |
 | **Scaffold** | Coloca mágicamente bloques debajo de tus pies justo a medida que caminas por cornisas o sobre el vacío, tendiendo puentes mientras te mueves. |
 | **VillagerClusters** | Implementa un sistema de clustering para agrupar aldeanos cercanos mostrando métricas precisas. |
+| **Chunks** | Chunks visibles diferenciando los de slimes y los normales. |
+
 
 ### Theme (Temas)
 *Personalizacion visual de la interfaz del cliente.*
@@ -150,13 +152,22 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 > [!WARNING]
 > El autor no se responsabiliza de su mal uso en servidores publicos.
 
-## Novedades de la Version 5.0.0
+## Novedades de la Version 5.1.0
 
-- **Limpieza de Interfaz:** Se han ocultado temporalmente módulos en mantenimiento (`NoRotate`, `PlayerESP`, `ItemPhysic`, `InventoryPeek`).
-- **Reorganización:** Los módulos `NoFog` y `NoParticles` ahora pertenecen a la categoría correcta de `Optimize`.
-- **Nuevo Módulo - VillagerClusters (World):** Implementa un sistema matemático de clustering (reutilizando `ClusterUtils`) para agrupar aldeanos cercanos, mostrando métricas precisas con líneas y cajas envolventes en 3D.
+- **Mejoras al CristalAura** Ahora es mas preciso y mas fluido con ejemplos mejores de su uso y configuraciones.
+- **Nuevo Módulo - VillagerClusters (World):** Implementa un sistema para agrupar aldeanos cercanos, mostrando métricas precisas con líneas y cajas envolventes en 3D.
 - **Nuevo Módulo - LeavesOptimizer (Optimize):** Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia) con color verde uniforme configurable, similar al modo "Fast" de Optifine.
-- **Fix Critico X-Ray**: El XRay fue re-escrito para no recalcular la malla de colisión de bloques de Minecraft cada tick del juego, lo que resultaba en un grave lag. Ahora, funciona como el X-Ray clásico de versiones antiguas (1.8.1).
-cos o telarañas o arena de almas no se recibe penalización de velocidad alguna (y están divididos en sus propios toggles).
+- **Fix Crítico X-Ray**: El XRay fue reescrito para no recalcular la malla de colisión de bloques de Minecraft cada tick del juego, lo que resultaba en un grave lag. Ahora funciona como el X-Ray clásico de versiones antiguas (1.8.1). Las telarañas o la arena de almas ya no penalizan la velocidad y están divididos en sus propios toggles.
 - **Nuevos Módulos de Optimización (Categoría Optimize)**: Se introducen los módulos `ChunkOptimizer` (estabiliza los fotogramas evitando microtirones al renderizar nuevas áreas de mundo) y `FPSBoost` (elimina renders costosos como la lluvia, animaciones extra o fuego grande).
 - **Refactor General**: Optimización general del EventBus interno.
+
+## Al final de esta documentación se adjuntaran capturas de las mejores configuraciones de las herramientas que suelen ser mas usadas.
+
+1. **KillAuraRealistic**
+<img width="248" height="366" alt="Captura de pantalla 2026-07-23 113906" src="https://github.com/user-attachments/assets/c63e007b-b4d3-47ad-b194-95c2f8243409" />
+
+2. **Optimizacion y mejoras de vision** 
+<img width="526" height="462" alt="Captura de pantalla 2026-07-23 114537" src="https://github.com/user-attachments/assets/081f825c-e296-4b00-94e9-63976da6fa2e" />
+
+3. **CristalAura. Es la mejor versión que pude lograr de esta opcion**
+<img width="250" height="606" alt="Captura de pantalla 2026-07-23 142612" src="https://github.com/user-attachments/assets/a8144a49-56a8-451c-abbb-fe9d3117dbc8" />
