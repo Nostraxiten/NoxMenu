@@ -7,7 +7,7 @@
 [![Java 21](https://img.shields.io/badge/Java-21-orange.svg?style=for-the-badge)](https://openjdk.org/)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.5-green.svg?style=for-the-badge)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Fabric-Loader-blue.svg?style=for-the-badge)](https://fabricmc.net/)
-[![Version](https://img.shields.io/badge/Version-5.0.0-purple.svg?style=for-the-badge)]()
+[![Version](https://img.shields.io/badge/Version-5.2.5-purple.svg?style=for-the-badge)]()
 </div>
 
 ## Descripción General
@@ -152,7 +152,7 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 > [!WARNING]
 > El autor no se responsabiliza de su mal uso en servidores publicos.
 
-## Novedades de la Version 5.1.0
+## Novedades de la Version 5.2.5
 
 - **Mejoras al CristalAura** Ahora es mas preciso y mas fluido con ejemplos mejores de su uso y configuraciones.
 - **Nuevo Módulo - VillagerClusters (World):** Implementa un sistema para agrupar aldeanos cercanos, mostrando métricas precisas con líneas y cajas envolventes en 3D.
