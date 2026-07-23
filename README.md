@@ -21,7 +21,7 @@
 > - **`OLDvers`**: Contiene versiones antiguas, experimentales o incompletas. Algunas pueden funcionar pero muchas otras pueden ser inestables, tener funciones rotas o estar desactualizadas. Úsalas con precaución.
 ---
 
-<img width="1919" height="444" alt="Captura de pantalla 2026-07-22 114545" src="https://github.com/user-attachments/assets/aa63bb2c-6bb8-49f8-858e-7415d2a64212" />
+<img width="1919" height="418" alt="Captura de pantalla 2026-07-23 143233" src="https://github.com/user-attachments/assets/bbbf61c0-28e2-4cfe-856c-66f4bd323f97" />
 
 ## Características y Arquitectura
  
