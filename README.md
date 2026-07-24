@@ -126,9 +126,8 @@ Optimizaciones de renderizado para mejorar los FPS. Es el módulo con más traba
  
 > **Nota v6.0.0**: `StaticDrops` sustituye a la antigua opción *No Rotation* de `ItemPhysic`, eliminada por incompatibilidad con la nueva API de render states de 1.21.5 (ver nota en Changelog).
  
-<!-- No tengo FPSBoost.java, solo lo que documentas en tu README privado. Si me pasas el código fuente puedo verificar que estas opciones existen tal cual y detectar nuevas que no hayas documentado. -->
  
-#### ChunkOptimizer
+### ChunkOptimizer
 Optimiza la carga y renderizado de chunks.
  
 | Opción | Descripción |
@@ -136,11 +135,6 @@ Optimiza la carga y renderizado de chunks.
 | **MaxRebuilds** | Máximo de secciones de chunk que el juego puede reconstruir por frame. Valores más altos cargan chunks más rápido pero pueden causar stuttering. |
 | **RebuildDelay** | Retardo en ms entre reconstrucciones de chunk. Aumentarlo suaviza el stuttering en CPUs lentas. |
 | **LazyChunks** | Optimiza el meshing de chunks fuera de la línea de visión directa. Recomendado mantener activo. |
- 
-#### LeavesOptimizer
-Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia), con color verde uniforme configurable — similar al modo "Fast" de OptiFine.
- 
-<!-- LeavesOptimizer aparece COMENTADO en tu ModuleManager.init() (// this.register(new LeavesOptimizer());), por lo que no está activo pese a estar en tus Novedades 7.0.0. Confírmame si lo activas o si sigue en pruebas. -->
  
 ### World (Mundo)
 *Automatización y dominio del entorno del juego.*
