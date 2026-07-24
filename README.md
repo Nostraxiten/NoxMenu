@@ -25,16 +25,6 @@
 
 <img width="1919" height="418" alt="Captura de pantalla 2026-07-23 143233" src="https://github.com/user-attachments/assets/bbbf61c0-28e2-4cfe-856c-66f4bd323f97" />
 
-## Características y Arquitectura
-
-- **Arquitectura Modular**: Añade o elimina funciones de forma dinámica sin romper el core.
-- **EventBus**: Sistema de eventos para comunicar módulos sin acoplamiento.
-- **ClickGUI Interactiva**: Interfaz con categorías organizadas, personalizable, arrastrable, con interruptores y deslizadores. Rediseñada en 7.0.0 con esquinas achaflanadas (chamfer) y estética "táctica" — el resultado final del rediseño (buscador de módulos incluido, paneles ordenados por categoría con toggles rápidos y ajustes desplegables) ha quedado espectacular.
-- **Persistencia**: Todos tus ajustes, teclas vinculadas, y ahora también el tamaño/posición de los paneles del GUI se guardan automáticamente.
-- **Mixins Avanzados**: Modificación de mecánicas internas sin tocar el código base del juego.
-
----
-
 ## Módulos y Opciones
 
 El menú cuenta con una extensa lista de módulos organizados cuidadosamente por categoría. A continuación, se detalla **qué hace exactamente cada opción**.
@@ -54,10 +44,7 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **Surround** | Coloca bloques automáticamente a tu alrededor para proteger tus pies de explosiones. |
 | **TriggerBot** | Golpea automáticamente justo en el milisegundo en el que el punto de mira de tu pantalla se cruza con una entidad. |
 
-<!-- Comentados en ModuleManager.init() y por tanto no activos en v7.0.0: KillAuraRealistic, Reach, Criticals, SilentAim, BowPredictionAim, NoRotate, AutoDodge*, ProjectileTrajectory*, DeathCoords* -->
-<!-- *NOTA: AutoDodge, ProjectileTrajectory y DeathCoords SÍ están registrados y activos en el ModuleManager que me pasaste, los mantengo documentados arriba/abajo. -->
-
-**Sub-opciones confirmadas en el GUI (KillAura / CrystalAura):**
+**Sub-opciones en el GUI (KillAura / CrystalAura):**
 
 | Opción | Descripción |
 |---|---|
@@ -78,13 +65,13 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **Rotation Jitter** | Ruido/aleatoriedad añadido a la rotación para parecer menos robótico. |
 | **Smooth Camera** | Activa la interpolación de cámara en general para el módulo. |
 
-**Sub-opciones confirmadas — Surround:**
+**Sub-opciones — Surround:**
 
 | Opción | Descripción |
 |---|---|
 | **Place Below** | Incluye también el bloque bajo tus pies dentro del anillo de protección, no solo los laterales. |
 
-**Otros módulos con panel de ajustes (⚙) en el GUI**: `TriggerBot`, `AntiKnockback`, `AutoTotem`, `HitboxExpand`, `AutoDodge` — hubo mejoras, pero no tengo el detalle exacto de sus opciones.
+**Otros módulos con panel de ajustes (⚙) en el GUI**: `TriggerBot`, `AntiKnockback`, `AutoTotem`, `HitboxExpand`, `AutoDodge` — hubo mejoras, investiga las opciones.
 
 ### Movement (Movimiento)
 *Módulos para alterar la física y desplazamiento del jugador.*
@@ -114,7 +101,7 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **OrbitCam** | Collision | Si está activo, la cámara no atraviesa bloques sólidos al orbitar. |
 | **OrbitCam** | Smoothing | Interpolación suave del movimiento orbital en vez de saltos bruscos. |
 
-**Otros módulos con panel de ajustes (⚙) en el GUI**: `Spider`, `Step`, `AntiVoid`, `NoclipTP` — hubo mejoras, pero no tengo el detalle exacto de sus opciones.
+**Otros módulos con panel de ajustes (⚙) en el GUI**: `Spider`, `Step`, `AntiVoid`, `NoclipTP` — hubo mejoras.
 
 ### Player (Jugador)
 *Mejoras en la interacción y utilidades del propio jugador.*
@@ -142,8 +129,7 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **HUDOverlay** | Coordinates / FPS / Biome | Checkboxes independientes para mostrar u ocultar cada dato en el overlay. |
 | **DeathCoords** | Auto Save Waypoint | Si está activo, guarda automáticamente la última muerte como waypoint en vez de solo mostrarla por chat. |
 
-**Otros módulos con panel de ajustes (⚙) en el GUI**: `AutoArmor`, `NotificationSystem` — hubo mejoras, pero no tengo el detalle exacto de sus opciones.
-
+**Otros módulos con panel de ajustes (⚙) en el GUI**: `AutoArmor`, `NotificationSystem` — hubo mejoras.
 ### Render (Visuales)
 *Alteraciones gráficas y mejoras visuales de cómo ves el mundo.*
 
@@ -159,7 +145,7 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **XRay** | Hace invisibles todos los bloques comunes sin valor revelando instantáneamente solo los minerales valiosos. |
 | **Zoom** | Acerca la vista de la cámara con una transición fluida y suave, similar al clásico zoom del mod OptiFine pero configurable. |
 
-**Sub-opciones confirmadas en el GUI (v7.0.0):**
+**Sub-opciones en el GUI (v7.0.0):**
 
 | Módulo | Opción | Descripción |
 |---|---|---|
@@ -169,8 +155,6 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **Zoom** | Speed | Velocidad de la transición al hacer zoom (por defecto `4,0`). |
 
 **Otros módulos con panel de ajustes (⚙) en el GUI**: `Freecam`, `StorageESP`, `BlockESP`, `ChestClusters` — hubo mejoras, pero no tengo el detalle exacto de sus opciones.
-
-<!-- ItemPhysic, PlayerESP, NoRotate, Chams, FullBright*, NoHurtCam están COMENTADOS en tu ModuleManager.init() (no activos en 7.0.0). *Ojo: "FullBright" reaparece como sub-opción DENTRO de XRay en el GUI, así que aunque el módulo standalone esté desactivado, la función existe embebida en XRay. Avísame si quieres separarlo de nuevo. -->
 
 ### Optimize (Optimización)
 *Mejoras de rendimiento y FPS para el cliente.*
@@ -299,12 +283,3 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 - **Nuevos Módulos de Optimización**: `ChunkOptimizer` y `FPSBoost` para reducir microtirones y desactivar renders costosos.
 - **Refactor General**: optimización interna del EventBus.
 - PreConfigurado con KillAura y CrystalAura en su mejor configuración.
-
-### v6.0.0 — 2026-07-24
-- **FIX**: `MixinItemEntityRenderer.onRenderPush` — firma actualizada al nuevo API de render states `(ItemEntityRenderState, MatrixStack, VertexConsumerProvider, int)`.
-- **ELIMINADO**: `ItemPhysic > No Rotation` — no-op permanente en la API de render states de 1.21.5. Usa `StaticDrops` (FPSBoost) como sustituto.
-- **Base**: Fabric 0.19.3, Minecraft 1.21.5, Yarn 1.21.5+build.1, Java 21.
-
-### v5.8.0
-- Adición de `LowFire`, `StaticDrops`, `LimitEntities`, `FastGlint` en FPSBoost.
-- Migración inicial a 1.21.5.
