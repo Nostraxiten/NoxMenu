@@ -1,5 +1,4 @@
 <div align="center">
- 
 # NoxMenu
  
 *Framework modular de cliente Fabric para Minecraft 1.21.5*
@@ -8,33 +7,33 @@
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.5-green.svg?style=for-the-badge)](https://www.minecraft.net/)
 [![Fabric](https://img.shields.io/badge/Fabric-Loader-blue.svg?style=for-the-badge)](https://fabricmc.net/)
 [![Version](https://img.shields.io/badge/Version-7.0.0-purple.svg?style=for-the-badge)]()
+ 
 </div>
-
 ## Descripción General
-
+ 
 **NoxMenu** es un cliente en desarrollo temprano. Cualquier error encontrado podría reportarse dentro del repositorio para soluciones futuras.
-
-> **Nota importante sobre el Repositorio (GitHub):** 
-> Al subirse a GitHub, el código fuente privado (`NoxMenuCode`) no se incluirá en el repositorio remoto. 
+ 
+> **Nota importante sobre el Repositorio (GitHub):**
+> Al subirse a GitHub, el código fuente privado (`NoxMenuCode`) no se incluirá en el repositorio remoto.
 > El repositorio solo contendrá las siguientes carpetas:
-> - **`NoxMenuMod`**: Contiene la versión principal, estable y funcional (v5.0.0) exportada a `.jar` lista para usar.
+> - **`NoxMenuMod`**: Contiene la versión principal, estable y funcional exportada a `.jar` lista para usar.
 > - **`OLDvers`**: Contiene versiones antiguas, experimentales o incompletas. Algunas pueden funcionar pero muchas otras pueden ser inestables, tener funciones rotas o estar desactualizadas. Úsalas con precaución.
+ 
 ---
-
+ 
 <img width="1919" height="418" alt="Captura de pantalla 2026-07-23 143233" src="https://github.com/user-attachments/assets/bbbf61c0-28e2-4cfe-856c-66f4bd323f97" />
-
 ## Características y Arquitectura
  
 - **Arquitectura Modular**: Añade o elimina funciones de forma dinámica sin romper el core.
 - **EventBus**: Sistema de eventos para comunicar módulos sin acoplamiento.
-- **ClickGUI Interactiva**: Interfaz con categorías organizadas, personalizable, arrastrable, con interruptores y deslizadores.
-- **Persistencia**: Todos tus ajustes y teclas vinculadas se guardan automáticamente.
+- **ClickGUI Interactiva**: Interfaz con categorías organizadas, personalizable, arrastrable, con interruptores y deslizadores. Rediseñada en 7.0.0 con esquinas achaflanadas (chamfer) y estética "táctica".
+- **Persistencia**: Todos tus ajustes, teclas vinculadas, y ahora también el tamaño/posición de los paneles del GUI se guardan automáticamente.
 - **Mixins Avanzados**: Modificación de mecánicas internas sin tocar el código base del juego.
 ---
  
 ## Módulos y Opciones
  
-El menú cuenta con una extensa lista de módulos organizados cuidadosamente por categoría. A continuación, se detalla **qué hace exactamente cada opción**:
+El menú cuenta con una extensa lista de módulos organizados cuidadosamente por categoría. A continuación, se detalla **qué hace exactamente cada opción**.
  
 ### Combat (Combate)
 *Módulos enfocados en la asistencia durante el combate y el daño.*
@@ -45,12 +44,14 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **AutoBlock** | Bloquea ataques automáticamente usando tu espada o escudo justo en el momento exacto de recibir daño. |
 | **AutoDodge** | Esquiva automáticamente flechas y proyectiles detectando su trayectoria. |
 | **AutoTotem** | Equipa instantáneamente un Tótem de Inmortalidad en tu mano secundaria de forma automática cuando tu salud es crítica. |
-| **CrystalAura** | Coloca y explota cristales del end automáticamente para hacer daño de área a tus enemigos. |
+| **CrystalAura** | Coloca y explota cristales del end automáticamente para hacer daño de área a tus enemigos. Mejorado en 7.0.0: más preciso y fluido. |
 | **HitboxExpand** | Expande virtualmente las cajas de colisión (hitboxes) de los enemigos para facilitar enormemente acertar los golpes. |
 | **KillAura** | Ataca y golpea automáticamente y a gran velocidad a cualquier entidad o jugador que entre en tu radio de alcance. |
-| **KillAuraRealistic** | Variante de KillAura que simula movimientos de cámara humanos y retrasa los ataques para parecer legítimo. |
 | **Surround** | Coloca bloques automáticamente a tu alrededor para proteger tus pies de explosiones. |
 | **TriggerBot** | Golpea automáticamente justo en el milisegundo en el que el punto de mira de tu pantalla se cruza con una entidad. |
+ 
+<!-- Comentados en ModuleManager.init() y por tanto no activos en v7.0.0: KillAuraRealistic, Reach, Criticals, SilentAim, BowPredictionAim, NoRotate, AutoDodge*, ProjectileTrajectory*, DeathCoords* -->
+<!-- *NOTA: AutoDodge, ProjectileTrajectory y DeathCoords SÍ están registrados y activos en el ModuleManager que me pasaste, los mantengo documentados arriba/abajo. -->
  
 ### Movement (Movimiento)
 *Módulos para alterar la física y desplazamiento del jugador.*
@@ -66,6 +67,7 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **Speed** | Modifica tu fricción y aceleración en el terreno para moverte a velocidades superiores a las del juego base. |
 | **Spider** | Te permite trepar cualquier pared vertical de bloques sólidos como si estuvieras subiendo una escalera de mano. |
 | **Step** | Aumenta la altura de paso, permitiéndote subir escalones o bloques completos de forma instantánea sin tener que saltar. |
+| **OrbitCam** | *(Nuevo en 7.0.0)* Cámara en tercera persona que orbita alrededor de tu jugador sin modificar tu rotación real enviada al servidor. Simula un F5 libre sin ceder control del jugador — compatible con KillAura mientras giras la cámara con el ratón. Preparado para uso con bots. |
  
 ### Player (Jugador)
 *Mejoras en la interacción y utilidades del propio jugador.*
@@ -87,8 +89,8 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
  
 | Módulo | Descripción Exacta |
 |---|---|
-| **BlockESP** | Resalta bloques de minerales (Diamante, Ancestral, Oro, Hierro, Carbon, Esmeralda, Cobre) a traves de las paredes con lineas de colores especificos y radio configurable. |
-| **ChestClusters** | Agrupa cofres, cofres trampa y barriles cercanos usando Union-Find. Dibuja una linea hacia el centroide del grupo, una caja envolvente con margen de un bloque y una etiqueta con el conteo. |
+| **BlockESP** | Resalta bloques de minerales (Diamante, Ancestral, Oro, Hierro, Carbón, Esmeralda, Cobre) a través de las paredes con líneas de colores específicos y radio configurable. |
+| **ChestClusters** | Agrupa cofres, cofres trampa y barriles cercanos usando Union-Find. Dibuja una línea hacia el centroide del grupo, una caja envolvente con margen de un bloque y una etiqueta con el conteo. |
 | **ESP** | Dibuja cajas 2D/3D (Extra Sensory Perception) precisas alrededor de jugadores y criaturas para revelar sus posiciones fácilmente. |
 | **Freecam** | Desprende la cámara de tu cuerpo para explorar los alrededores libremente como espectador, mientras tu personaje físico se queda seguro. |
 | **NoFog** | Elimina completamente la niebla de la lejanía, del agua profunda y de la lava, mejorando enormemente la visibilidad. |
@@ -98,15 +100,47 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **Tracers** | Dibuja finas y precisas líneas de colores desde la cruceta central de tu pantalla directamente hacia los jugadores y mobs cercanos. |
 | **XRay** | Hace invisibles todos los bloques comunes sin valor revelando instantáneamente solo los minerales valiosos. |
 | **Zoom** | Acerca la vista de la cámara con una transición fluida y suave, similar al clásico zoom del mod OptiFine pero configurable. |
-
+ 
+<!-- ItemPhysic, PlayerESP, NoRotate, Chams, FullBright, NoHurtCam están COMENTADOS en tu ModuleManager.init() actual (no activos en 7.0.0). Los omito de la tabla pública hasta que los reactives. Avísame cuando lo hagas y los añado. -->
+ 
 ### Optimize (Optimización)
-*Mejoras de rendimiento y fps para el cliente.*
-
-| Módulo | Descripción Exacta |
+*Mejoras de rendimiento y FPS para el cliente.*
+ 
+#### FPSBoost
+Optimizaciones de renderizado para mejorar los FPS. Es el módulo con más trabajo dedicado en esta versión.
+ 
+| Opción | Descripción |
 |---|---|
-| **ChunkOptimizer** | Reduce el lag y stuttering al generar y cargar nuevos chunks limitando la recarga en el motor gráfico. |
-| **FPSBoost** | Opciones para desactivar clima, fuego alto, y reducir distancias de dibujado para maximizar fotogramas. |
-| **LeavesOptimizer** | Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia). |
+| **NoWeather** | Desactiva el renderizado de lluvia y nieve por completo. |
+| **NoClouds** | Desactiva el renderizado de nubes. |
+| **NoMenuBlur** | Elimina el efecto de desenfoque al abrir menús. |
+| **AnimationThrottle** | Reduce la frecuencia de actualización de las animaciones de textura (bloques animados, agua, lava, portales, etc.). |
+| **AnimSkipTicks** | Número de ticks que se saltan por cada tick renderizado (0–3). Cuanto mayor, más estática la animación. |
+| **StaticAnim** | Congela completamente la animación de texturas (100% estática). Máximo ahorro de CPU en sprites. Tiene prioridad sobre AnimationThrottle. |
+| **LowFire** | Reduce el tamaño del overlay de fuego al estar quemándose. |
+| **FireScale** | Escala del overlay de fuego (0.1 = mínimo, 1.0 = vanilla). |
+| **StaticDrops** | Congela la rotación de los ítems dropeados en el suelo. |
+| **LimitEntities** | Activa la distancia de render de entidades personalizada. |
+| **EntityDist** | Distancia máxima de render de entidades en bloques. Las entidades más allá no se renderizan. |
+| **FastGlint** | Simplifica el efecto glint de encantamiento (una sola pasada en lugar de dos). |
+ 
+> **Nota v6.0.0**: `StaticDrops` sustituye a la antigua opción *No Rotation* de `ItemPhysic`, eliminada por incompatibilidad con la nueva API de render states de 1.21.5 (ver nota en Changelog).
+ 
+<!-- No tengo FPSBoost.java, solo lo que documentas en tu README privado. Si me pasas el código fuente puedo verificar que estas opciones existen tal cual y detectar nuevas que no hayas documentado. -->
+ 
+#### ChunkOptimizer
+Optimiza la carga y renderizado de chunks.
+ 
+| Opción | Descripción |
+|---|---|
+| **MaxRebuilds** | Máximo de secciones de chunk que el juego puede reconstruir por frame. Valores más altos cargan chunks más rápido pero pueden causar stuttering. |
+| **RebuildDelay** | Retardo en ms entre reconstrucciones de chunk. Aumentarlo suaviza el stuttering en CPUs lentas. |
+| **LazyChunks** | Optimiza el meshing de chunks fuera de la línea de visión directa. Recomendado mantener activo. |
+ 
+#### LeavesOptimizer
+Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia), con color verde uniforme configurable — similar al modo "Fast" de OptiFine.
+ 
+<!-- LeavesOptimizer aparece COMENTADO en tu ModuleManager.init() (// this.register(new LeavesOptimizer());), por lo que no está activo pese a estar en tus Novedades 7.0.0. Confírmame si lo activas o si sigue en pruebas. -->
  
 ### World (Mundo)
 *Automatización y dominio del entorno del juego.*
@@ -117,17 +151,16 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 | **AutoMine** | Mantiene presionado y activo el botón de romper bloques de forma constante para facilitar túneles sin cansarte de presionar el ratón. |
 | **AutoTool** | Analiza en microsegundos el bloque que estás mirando y cambia tu mano de forma automática a la mejor herramienta de tu inventario. |
 | **Scaffold** | Coloca mágicamente bloques debajo de tus pies justo a medida que caminas por cornisas o sobre el vacío, tendiendo puentes mientras te mueves. |
-| **VillagerClusters** | Implementa un sistema de clustering para agrupar aldeanos cercanos mostrando métricas precisas. |
-| **Chunks** | Chunks visibles diferenciando los de slimes y los normales. |
-
-
+| **VillagerClusters** | Implementa un sistema de clustering para agrupar aldeanos cercanos mostrando métricas precisas con líneas y cajas envolventes en 3D. |
+| **Chunks** | Resalta chunks visibles diferenciando los de slimes de los normales. |
+ 
 ### Theme (Temas)
-*Personalizacion visual de la interfaz del cliente.*
-
-| Modulo | Descripcion Exacta |
+*Personalización visual de la interfaz del cliente.*
+ 
+| Módulo | Descripción Exacta |
 |---|---|
 | **CustomTheme** | Permite cambiar los colores de la interfaz, textos, fondos y degradados de forma interactiva desde el propio juego. |
-
+ 
 ---
  
 ## Controles de la Interfaz
@@ -135,6 +168,7 @@ El menú cuenta con una extensa lista de módulos organizados cuidadosamente por
 - **Abrir Menú**: Presiona `Tab + Control` (configurable).
 - **Asignar Tecla (Keybind)**: Haz clic derecho en cualquier módulo dentro de la GUI y seguidamente presiona la tecla que desees asignar a ese módulo.
 - **Configurar Módulo**: Haz clic en el icono de engranaje o despliega la pestaña de un módulo para ajustar opciones extras precisas (sliders numéricos, opciones de checkbox y menús de modos).
+- **Redimensionar Panel** *(nuevo en 7.0.0)*: Arrastra la esquina inferior derecha de cualquier panel de categoría para ajustar su tamaño, con scroll interno automático si el contenido no cabe.
 ---
  
 ## Cómo Compilar y Usar
@@ -148,18 +182,30 @@ Para construir tu propio archivo `.jar` y disfrutar del mod a partir del código
 3. Al terminar, el archivo compilado listo para usar aparecerá en la ruta `build/libs/`.
 4. Mueve ese archivo `.jar` a tu carpeta local de mods (`%appdata%/.minecraft/mods` en Windows) e inicia el juego asegurándote de usar el perfil cargador de Fabric.
 ---
-
+ 
 > [!WARNING]
-> El autor no se responsabiliza de su mal uso en servidores publicos.
-
-## Novedades de la Version 7.0.0
-
-- **Mejoras al CristalAura** Ahora es mas preciso y mas fluido con ejemplos mejores de su uso y configuraciones.
-- **Nuevo Módulo - VillagerClusters (World):** Implementa un sistema para agrupar aldeanos cercanos, mostrando métricas precisas con líneas y cajas envolventes en 3D.
-- **Nuevo Módulo - LeavesOptimizer (Optimize):** Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia) con color verde uniforme configurable, similar al modo "Fast" de Optifine.
-- **Nuevos Módulos de Optimización (Categoría Optimize)**: Se introducen los módulos `ChunkOptimizer` (estabiliza los fotogramas evitando microtirones al renderizar nuevas áreas de mundo) y `FPSBoost` (elimina renders costosos como la lluvia, animaciones extra o fuego grande).
-- **Refactor General**: Optimización general del EventBus interno.
-- **Nueva opcion Orbit**: Simula F5 sin control del jugador. Preparado para bots.
-- Mejoras visuales y mejora de interfaz.
-- PreConfigurado con las opciones de KillAura y CrisrtalAura en su mejor version. 
-
+> El autor no se responsabiliza de su mal uso en servidores públicos.
+ 
+---
+ 
+##  Changelog
+ 
+### v7.0.0 — 2026-07-24
+- **Nuevo Módulo — OrbitCam (Movement)**: Cámara orbital en tercera persona. Sigue la posición del jugador pero permite girar la vista libremente con el ratón sin afectar la rotación real (servidor) del jugador. Compatible con KillAura.
+- **ClickGUI rediseñada**: esquinas achaflanadas (chamfer) y bordes con estética "táctica".
+- **Paneles redimensionables**: arrastra la esquina inferior derecha de cualquier categoría para ajustar su tamaño, con scroll interno automático.
+- **Persistencia de paneles**: posición y tamaño de cada panel se guardan automáticamente entre sesiones.
+- **Mejoras al CrystalAura**: más preciso y fluido, con mejores ejemplos de configuración.
+- **Nuevo Módulo — VillagerClusters (World)**: agrupa aldeanos cercanos con líneas y cajas envolventes en 3D.
+- **Nuevo Módulo — LeavesOptimizer (Optimize)**: convierte hojas en bloques sólidos sin transparencia, color verde uniforme configurable. *(comentado en ModuleManager, ver nota arriba)*
+- **Nuevos Módulos de Optimización**: `ChunkOptimizer` y `FPSBoost` para reducir microtirones y desactivar renders costosos.
+- **Refactor General**: optimización interna del EventBus.
+- PreConfigurado con KillAura y CrystalAura en su mejor configuración.
+### v6.0.0 — 2026-07-24
+- **FIX**: `MixinItemEntityRenderer.onRenderPush` — firma actualizada al nuevo API de render states `(ItemEntityRenderState, MatrixStack, VertexConsumerProvider, int)`.
+- **ELIMINADO**: `ItemPhysic > No Rotation` — no-op permanente en la API de render states de 1.21.5. Usa `StaticDrops` (FPSBoost) como sustituto.
+- **Base**: Fabric 0.19.3, Minecraft 1.21.5, Yarn 1.21.5+build.1, Java 21.
+### v5.8.0
+- Adición de `LowFire`, `StaticDrops`, `LimitEntities`, `FastGlint` en FPSBoost.
+- Migración inicial a 1.21.5.
+ 
