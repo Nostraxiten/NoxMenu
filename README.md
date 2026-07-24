@@ -182,10 +182,6 @@ Optimizaciones de renderizado para mejorar los FPS. Es el módulo con más traba
 | **EntityDist** | Distancia máxima de render de entidades en bloques. Las entidades más allá no se renderizan. |
 | **FastGlint** | Simplifica el efecto glint de encantamiento (una sola pasada en lugar de dos). |
 
-> **Nota v6.0.0**: `StaticDrops` sustituye a la antigua opción *No Rotation* de `ItemPhysic`, eliminada por incompatibilidad con la nueva API de render states de 1.21.5 (ver nota en Changelog).
-
-**Confirmado con captura del GUI en vivo (v7.0.0)** — todas las opciones de la tabla existen tal cual en el cliente compilado, con estos valores por defecto: `AnimationThrottle` y `StaticAnim` activos, `AnimSkipTicks = 2`, `LowFire` activo con `FireScale = 0,4`. El resto (`NoWeather`, `NoClouds`, `NoMenuBlur`, `StaticDrops`, `LimitEntities`, `FastGlint`) vienen desactivados por defecto.
-
 #### ChunkOptimizer
 Optimiza la carga y renderizado de chunks.
 
@@ -197,11 +193,6 @@ Optimiza la carga y renderizado de chunks.
 | **AdaptiveMode** *(confirmado en GUI, no documentado antes)* | Ajusta `MaxRebuilds`/`RebuildDelay` dinámicamente en tiempo real según el FPS actual, en vez de usar valores fijos. |
 | **TargetFPS** *(confirmado en GUI, no documentado antes)* | FPS objetivo que `AdaptiveMode` intenta mantener al ajustar los rebuilds (por defecto `240`). |
 | **MinRebuilds** *(confirmado en GUI, no documentado antes)* | Suelo mínimo de reconstrucciones por frame que `AdaptiveMode` no bajará aunque el FPS vaya sobrado (por defecto `2`). |
-
-#### LeavesOptimizer
-Reduce el impacto en la GPU de las hojas de los árboles transformándolas internamente en bloques sólidos (sin transparencia), con color verde uniforme configurable — similar al modo "Fast" de OptiFine.
-
-<!-- LeavesOptimizer aparece COMENTADO en tu ModuleManager.init() (// this.register(new LeavesOptimizer());), por lo que no está activo pese a estar en tus Novedades 7.0.0. Confírmame si lo activas o si sigue en pruebas. -->
 
 ### World (Mundo)
 *Automatización y dominio del entorno del juego.*
