@@ -23,7 +23,9 @@
 
 ---
 
-<img width="1919" height="418" alt="Captura de pantalla 2026-07-23 143233" src="https://github.com/user-attachments/assets/bbbf61c0-28e2-4cfe-856c-66f4bd323f97" />
+<img width="1919" height="957" alt="Captura de pantalla 2026-07-24 131808" src="https://github.com/user-attachments/assets/2aaa8ac2-62cf-4e6a-95a6-b17ff84d5fc3" />
+<img width="1877" height="429" alt="Captura de pantalla 2026-07-24 132021" src="https://github.com/user-attachments/assets/eacec5f5-eac3-47ca-919e-b8e7dd4b2690" />
+
 
 ## Módulos y Opciones
 
